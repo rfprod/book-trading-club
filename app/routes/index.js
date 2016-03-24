@@ -56,7 +56,7 @@ module.exports = function (app, passport, jsdom, fs, syncrec) {
 								var jsonItems = json.items;
 								jsonTotalItems = json.totalItems;
 								console.log('jsonTotalItems: '+jsonTotalItems);
-								for (var i=0;i<jsonItems.length-1;i++){
+								for (var i=0;i<jsonItems.length;i++){
 									if (typeof jsonItems[i].id != 'undefined' &&
 										typeof jsonItems[i].volumeInfo.title != 'undefined' &&
 										typeof jsonItems[i].volumeInfo.description != 'undefined' &&
