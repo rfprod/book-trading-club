@@ -56,7 +56,7 @@ function emailSignup(obj){
 	console.log(formContainer.attr('id'));
 	var emailPattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
 	var emailSignup = formContainer.find('#email-signup');
-	if (emailPattern.test(emailSignup)){
+	if (emailPattern.test(emailSignup.val())){
 		var passSignup = formContainer.find('#password-signup');
 		var passRepeatSignup = formContainer.find('#password-repeat-signup');
 		emailSignup.parent().attr('class','form-group');
