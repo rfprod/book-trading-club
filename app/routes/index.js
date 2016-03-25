@@ -512,7 +512,7 @@ module.exports = function (app, passport, jsdom, fs, syncrec) {
 	    ws.on('error', function() {console.log('Remove book: ERROR');});
 	});
 	
-	app.ws(/emailsignup/, function(ws, res){
+	app.ws('/emailsignup/', function(ws, res){
     	console.log('/emailsignup');
     	ws.on('message', function(msg){
 			console.log('email sign up: '+msg);
@@ -556,7 +556,7 @@ module.exports = function (app, passport, jsdom, fs, syncrec) {
 	    res.redirect('/profile');
 	});	
 	
-	app.route(/addbook/).post(isLoggedIn, function(req, res){
+	app.route('/addbook/').post(isLoggedIn, function(req, res){
 		var bookOwner = req.session.passport.user;
 		console.log(bookOwner);
     	var bookName = req.body.bookname;
