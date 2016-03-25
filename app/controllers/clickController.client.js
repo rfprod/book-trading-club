@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-   var editUserExtendedButton = document.querySelector('#edit-user-extended');
+   var editUserExtendedButton = document.querySelector('.edit');
    var doneUserExtendedButton = document.querySelector('.done');
    var profileEmail = document.querySelector('#profile-email');
    var profileFullName = document.querySelector('#profile-fullname');
